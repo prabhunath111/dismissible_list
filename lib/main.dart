@@ -34,11 +34,13 @@ class MyAppState extends State<MyApp> {
           title: Text(title),
         ),
         body: ListView.builder(
+
           itemCount: items.length,
           itemBuilder: (context, index) {
             final item = items[index];
 
             return Dismissible(
+
               // Each Dismissible must contain a Key. Keys allow Flutter to
               // uniquely identify widgets.
               key: Key(item),
